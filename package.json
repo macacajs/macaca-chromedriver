@@ -1,0 +1,45 @@
+{
+  "name": "macaca-chromedriver",
+  "version": "0.1.7",
+  "description": "Node.js wrapper for the selenium chromedriver.",
+  "keywords": [
+    "macaca",
+    "chromedriver"
+  ],
+  "bin": {
+    "macaca-chromedriver": "./bin/macaca-chromedriver"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/macaca-chromedriver.git"
+  },
+  "dependencies": {
+    "commander": "~2.9.0",
+    "jszip": "~2.5.0",
+    "macaca-utils": "~0.1.6",
+    "reliable-logger": "~1.0.7",
+    "request-promise": "~1.0.2",
+    "webdriver-dfn-error-code": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "jshint": "*",
+    "istanbul": "*",
+    "pre-commit": "1.1.1"
+  },
+  "scripts": {
+    "install": "./bin/macaca-chromedriver install",
+    "test": "make test",
+    "jshint": "make jshint"
+  },
+  "pre-commit": [
+    "jshint"
+  ],
+  "homepage": "https://github.com/macacajs/macaca-chromedriver",
+  "author": "xudafeng",
+  "email": "xudafeng@126.com",
+  "blog": "http://xdf.me",
+  "license": "MIT"
+}

@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+/* ================================================================
+ * macaca-chromedriver by xdf(xudafeng[at]126.com)
+ *
+ * first created at : Fri Sep 11 2015 00:49:51 GMT+0800 (CST)
+ *
+ * ================================================================
+ * Copyright 2013 xdf
+ *
+ * Licensed under the MIT License
+ * You may not use this file except in compliance with the License.
+ *
+ * ================================================================ */
+
+'use strict';
+
+var program = require('commander');
+var install = require('../lib/install');
+
+var pkg = require('../package.json');
+
+program
+  .option('-v, --versions', 'output version infomation')
+  .usage('[]');
+
+program
+  .command('install')
+  .description('install chromedriver')
+  .action(function(env, options){
+    install();
+  });
+
+program.parse(process.argv);
+
+if (program.versions) {
+  console.info('\n  ' + pkg.version + '\n');
+  process.exit(0);
+}
