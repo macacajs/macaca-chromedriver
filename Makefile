@@ -4,7 +4,7 @@ npm_bin= $$(npm bin)
 all: test
 install:
 	@npm install
-test: install
+test:
 	@node --harmony \
 		${npm_bin}/istanbul cover ${npm_bin}/_mocha \
 		-- \
