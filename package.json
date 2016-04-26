@@ -1,6 +1,6 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
@@ -12,7 +12,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/macaca-chromedriver.git"
+    "url": "git://github.com/macacajs/macaca-chromedriver.git"
   },
   "dependencies": {
     "commander": "~2.9.0",
@@ -38,8 +38,5 @@
     "jshint"
   ],
   "homepage": "https://github.com/macacajs/macaca-chromedriver",
-  "author": "xudafeng",
-  "email": "xudafeng@126.com",
-  "blog": "http://xdf.me",
   "license": "MIT"
 }
