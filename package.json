@@ -9,7 +9,7 @@
   "bin": {
     "macaca-chromedriver": "./bin/macaca-chromedriver"
   },
-  "main": "index.js",
+  "main": "./lib/macaca-chromedriver",
   "repository": {
     "type": "git",
     "url": "git://github.com/macacajs/macaca-chromedriver.git"
