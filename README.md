@@ -51,9 +51,3 @@ CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver npm install chrom
 ```shell
 $ chromedriver
 ```
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2015 xdf
