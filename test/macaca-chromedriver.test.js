@@ -23,7 +23,6 @@ describe('test', function() {
 
   it('should start success', function *(done) {
     var proxyPort = yield detectPort(3456);
-    console.log(`port: ${proxyPort}`);
     var chromedriver = new ChromeDriver({
       proxyPort: proxyPort
     });
