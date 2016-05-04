@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "co-mocha": "~1.1.2",
+    "detect-port": "^0.1.4",
     "istanbul": "*",
     "jshint": "*",
     "pre-commit": "1.1.1",

@@ -14,6 +14,7 @@
 'use strict';
 
 var ChromeDriver = require('..');
+var detectPort = require('detect-port');
 
 describe('test', function() {
   it('should be ok', function() {
@@ -21,7 +22,11 @@ describe('test', function() {
   });
 
   it('should start success', function *(done) {
-    var chromedriver = new ChromeDriver();
+    var proxyPort = yield detectPort(9515);
+    console.log(`port: ${proxyPort}`);
+    var chromedriver = new ChromeDriver({
+      proxyPort: proxyPort
+    });
 
     chromedriver.should.be.ok;
 
