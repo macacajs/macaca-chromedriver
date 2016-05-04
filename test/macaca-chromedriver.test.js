@@ -22,7 +22,7 @@ describe('test', function() {
   });
 
   it('should start success', function *(done) {
-    var proxyPort = yield detectPort(3456);
+    var proxyPort = yield detectPort(9515);
     var chromedriver = new ChromeDriver({
       proxyPort: proxyPort
     });
@@ -40,6 +40,11 @@ describe('test', function() {
       done();
     });
 
-    chromedriver.start({});
+    chromedriver.start({ 'browserName': 'chrome' }).catch(err => {
+      console.log(err);
+      setTimeout(function() {
+        throw err;
+      });
+    });
   });
 });

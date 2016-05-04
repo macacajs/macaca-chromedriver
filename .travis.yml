@@ -1,12 +1,16 @@
 language: node_js
 node_js:
   - "4"
-sudo: false
+sudo: required
+dist: trusty
 addons:
   apt:
+    sources:
+    - google-chrome
     packages:
-      - xvfb
-install:
-  - export DISPLAY=':99.0'
-  - Xvfb :99 -screen 0 1366x768x24 > /dev/null 2>&1 &
+    - google-chrome-stable
+    - xvfb
+before_install:
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
 script: "make test"
