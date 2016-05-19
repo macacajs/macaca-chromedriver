@@ -1,6 +1,6 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
@@ -31,7 +31,7 @@
     "should": "~8.0.2"
   },
   "scripts": {
-    "install": "./bin/macaca-chromedriver install",
+    "install": "node ./bin/macaca-chromedriver install",
     "test": "make test",
     "jshint": "make jshint"
   },
