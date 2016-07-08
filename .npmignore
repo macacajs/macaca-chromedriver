@@ -9,3 +9,5 @@ Makefile
 .jshintignore
 coverage/
 exec/
+*.sw*
+*.un~
