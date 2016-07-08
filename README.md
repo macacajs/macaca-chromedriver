@@ -25,6 +25,14 @@
 $ npm i macaca-chromedriver --save-dev
 ```
 
+## Custom port
+
+Another option is to use port variable `MACACA_CHROMEDRIVER_PORT`
+
+```shell
+MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
+```
+
 ## Custom binaries url
 
 To use a mirror of the ChromeDriver binaries use npm config property `chromedriver_cdnurl`.
