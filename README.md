@@ -21,7 +21,7 @@
 
 ## Installment
 
-```shell
+```javascript
 $ npm i macaca-chromedriver --save-dev
 ```
 
@@ -29,7 +29,7 @@ $ npm i macaca-chromedriver --save-dev
 
 Another option is to use port variable `MACACA_CHROMEDRIVER_PORT`
 
-```shell
+```javascript
 MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
 ```
 
@@ -38,7 +38,7 @@ MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
 To use a mirror of the ChromeDriver binaries use npm config property `chromedriver_cdnurl`.
 Default is `http://chromedriver.storage.googleapis.com`.
 
-```shell
+```javascript
 npm install chromedriver --chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
 ```
 
@@ -50,12 +50,12 @@ chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
 
 Another option is to use PATH variable `CHROMEDRIVER_CDNURL`.
 
-```shell
+```javascript
 CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver npm install chromedriver
 ```
 
 ## Quick Start
 
-```shell
+```javascript
 $ chromedriver
 ```
