@@ -1,6 +1,6 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "commander": "~2.9.0",
+    "detect-port": "^1.0.1",
     "jszip": "~2.5.0",
     "macaca-utils": "~0.1.6",
     "request": "~2.69.0",
