@@ -3,6 +3,7 @@
 'use strict';
 
 var program = require('commander');
+
 var install = require('../lib/install');
 
 var pkg = require('../package.json');
