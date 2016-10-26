@@ -1,6 +1,6 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.0.20",
+  "version": "1.0.22",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
@@ -15,9 +15,9 @@
     "url": "git://github.com/macacajs/macaca-chromedriver.git"
   },
   "dependencies": {
+    "adm-zip": "^0.4.7",
     "commander": "~2.9.0",
     "detect-port": "^1.0.1",
-    "jszip": "~2.5.0",
     "macaca-utils": "~0.1.6",
     "request": "~2.69.0",
     "webdriver-dfn-error-code": "~1.0.0",
