@@ -59,3 +59,9 @@ CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver npm install chrom
 ```javascript
 $ chromedriver
 ```
+
+## Custom Version
+
+```shell
+$ CHROMEDRIVER_VERSION=2.2x npm i macaca-chromedriver -g
+```
