@@ -20,7 +20,7 @@ describe('test', function() {
       yield chromedriver.start({
         browserName: 'chrome'
       });
-    } catch (e) {
+    } catch (err) {
       console.log(err);
     }
   });
