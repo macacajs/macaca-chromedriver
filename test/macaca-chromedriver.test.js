@@ -16,13 +16,12 @@ describe('test', function() {
 
     chromedriver.should.be.ok();
 
-    return chromedriver.start({
-      browserName: 'chrome'
-    }).catch(err => {
-      console.log(err);
-      setTimeout(function() {
-        throw err;
+    try {
+      yield chromedriver.start({
+        browserName: 'chrome'
       });
-    });
+    } catch (e) {
+      console.log(err);
+    }
   });
 });
