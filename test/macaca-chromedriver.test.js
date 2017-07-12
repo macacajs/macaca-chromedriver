@@ -2,6 +2,7 @@
 
 var ChromeDriver = require('..');
 var detectPort = require('detect-port');
+var Install = require('../lib/install');
 
 describe('test', function() {
   it('should be ok', function() {
@@ -23,5 +24,12 @@ describe('test', function() {
     } catch (err) {
       console.log(err);
     }
+  });
+  it('install specific chromedriver version', function *() {
+    Install('2.30').then(() => {
+      logger.info(`Install chromedriver version ${this.version} succeed!`);
+    }).catch(() => {
+      logger.error(`Install chromedriver version ${this.version} failed!`);
+    });
   });
 });
