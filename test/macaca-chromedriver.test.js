@@ -2,6 +2,7 @@
 
 var ChromeDriver = require('..');
 var detectPort = require('detect-port');
+var Install = require('../lib/install');
 
 describe('test', function() {
   it('should be ok', function() {
