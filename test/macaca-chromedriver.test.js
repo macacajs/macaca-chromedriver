@@ -25,12 +25,4 @@ describe('test', function() {
       console.log(err);
     }
   });
-  it('install specific chromedriver version', function *() {
-    process.env.CHROMEDRIVER_CDNURL='http://cdn.npm.taobao.org/dist/chromedriver';
-    Install('2.30').then(() => {
-      logger.info(`Install chromedriver version ${this.version} succeed!`);
-    }).catch(() => {
-      logger.error(`Install chromedriver version ${this.version} failed!`);
-    });
-  });
 });
