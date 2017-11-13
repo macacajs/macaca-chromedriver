@@ -4,7 +4,6 @@ npm-debug.log
 .idea/*
 Thumbs.db
 coverage/
-.project
 exec/
 *.sw*
 *.un~
