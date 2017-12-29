@@ -1,11 +1,12 @@
 'use strict';
 
+var assert = require('assert');
 var ChromeDriver = require('..');
 var detectPort = require('detect-port');
 
 describe('test', function() {
   it('should be ok', function() {
-    ChromeDriver.should.be.ok();
+    assert.ok(ChromeDriver);
   });
 
   it('should start success', function *() {
@@ -14,7 +15,7 @@ describe('test', function() {
       proxyPort: proxyPort
     });
 
-    chromedriver.should.be.ok();
+    assert.ok(chromedriver);
 
     try {
       yield chromedriver.start({

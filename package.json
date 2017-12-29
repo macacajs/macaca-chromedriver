@@ -27,20 +27,20 @@
     "co-mocha": "~1.1.2",
     "istanbul": "^0.4.5",
     "jshint": "*",
-    "mocha": "^3.4.2",
-    "pre-commit": "*",
-    "should": "~8.0.2"
+    "mocha": "*",
+    "pre-commit": "*"
   },
   "scripts": {
     "install": "node ./bin/macaca-chromedriver install",
-    "test": "make test",
-    "jshint": "make jshint"
+    "test": "istanbul cover `npm bin`/_mocha",
+    "lint": "jshint .",
+    "ci": "npm run lint && npm run test"
   },
   "config": {
     "defaultVersion": "2.33"
   },
   "pre-commit": [
-    "jshint"
+    "lint"
   ],
   "homepage": "https://github.com/macacajs/macaca-chromedriver",
   "license": "MIT"

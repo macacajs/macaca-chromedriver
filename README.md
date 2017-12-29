@@ -21,7 +21,7 @@
 
 ## Installment
 
-``` bash
+```bash
 $ npm i macaca-chromedriver --save-dev
 ```
 
@@ -38,30 +38,34 @@ MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
 To use a mirror of the ChromeDriver binaries use npm config property `chromedriver_cdnurl`.
 Default is `http://chromedriver.storage.googleapis.com`.
 
-``` bash
+`` bash
 $ npm install chromedriver --chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
 ```
 
 Or add property into your [`.npmrc`](https://docs.npmjs.com/files/npmrc) file.
 
-``` bash
+```bash
 $ chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
 ```
 
 Another option is to use PATH variable `CHROMEDRIVER_CDNURL`.
 
-``` bash
+```bash
 $ CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver npm install chromedriver
 ```
 
 ## Quick Start
 
-``` bash
+```bash
 $ chromedriver
 ```
 
 ## Custom Version
 
-``` bash
+```bash
 $ CHROMEDRIVER_VERSION=2.2x npm i macaca-chromedriver -g
 ```
+
+## License
+
+The MIT License (MIT)
