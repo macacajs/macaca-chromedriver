@@ -25,15 +25,15 @@
   },
   "devDependencies": {
     "co-mocha": "~1.1.2",
-    "git-contributor": "^1.0.3",
-    "istanbul": "^0.4.5",
+    "git-contributor": "^1.0.8",
     "jshint": "*",
     "mocha": "*",
+    "nyc": "^11.7.1",
     "pre-commit": "*"
   },
   "scripts": {
     "install": "node ./bin/macaca-chromedriver install",
-    "test": "istanbul cover `npm bin`/_mocha",
+    "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "jshint .",
     "ci": "npm run lint && npm run test",
     "contributor": "git-contributor"

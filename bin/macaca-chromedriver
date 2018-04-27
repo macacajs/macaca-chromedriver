@@ -2,11 +2,11 @@
 
 'use strict';
 
-var program = require('commander');
+const program = require('commander');
 
-var install = require('../lib/install');
+const install = require('../lib/install');
 
-var pkg = require('../package.json');
+const pkg = require('../package.json');
 
 program
   .option('-v, --versions', 'output version infomation')

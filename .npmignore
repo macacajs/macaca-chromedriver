@@ -3,6 +3,7 @@ node_modules
 .jshintrc
 .jshintignore
 coverage/
+.nyc_output
 exec/
 *.sw*
 *.un~

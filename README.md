@@ -74,7 +74,7 @@ $ CHROMEDRIVER_VERSION=2.2x npm i macaca-chromedriver -g
 | :---: | :---: | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor.git), auto upated at `Sun Mar 25 2018 15:58:33 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Sat Apr 21 2018 21:14:39 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
