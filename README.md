@@ -29,8 +29,8 @@ $ npm i macaca-chromedriver --save-dev
 
 Another option is to use port variable `MACACA_CHROMEDRIVER_PORT`
 
-``` bash
-MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
+```bash
+$ MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
 ```
 
 ## Custom binaries url
@@ -38,7 +38,7 @@ MACACA_CHROMEDRIVER_PORT=9516 macaca run --verbose
 To use a mirror of the ChromeDriver binaries use npm config property `chromedriver_cdnurl`.
 Default is `http://chromedriver.storage.googleapis.com`.
 
-`` bash
+```bash
 $ npm install chromedriver --chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
 ```
 
