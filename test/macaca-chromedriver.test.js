@@ -32,22 +32,16 @@ describe('test', function() {
 
   after(async function () {
     chromedriver.stop();
-    const psResult = await _.exec('ps');
-    console.log('psResult');
-    console.log(psResult);
-    const psefResult = await _.exec('ps -ef');
-    console.log('psefResult');
-    console.log(psefResult);
     const smallChrome = await _.exec('ps -ef | grep \'chrome\'');
     console.log('smallChrome');
     console.log(smallChrome);
-    const allChromeComma = await _.exec('ps -ef | grep \'Chrome\' | grep -v \'grep\'');
-    console.log('allChromeComma');
-    console.log(allChromeComma);
-    const allChrome = await _.exec('ps -ef | grep Chrome | grep -v grep');
-    console.log('allChrome');
-    console.log(allChrome);
-    const debugChrome = await _.exec('ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\'');
+    const portChrome = await _.exec('ps -ef | grep \'chrome\' | grep -e \'remote-debugging-port\'');
+    console.log('portChrome');
+    console.log(portChrome);
+    const smallChromeNoGrep = await _.exec('ps -ef | grep \'chrome\' | grep -v \'grep\'');
+    console.log('smallChromeNoGrep');
+    console.log(smallChromeNoGrep);
+    const debugChrome = await _.exec('ps -ef | grep \'chrome\' | grep -v \'grep\' | grep -e \'remote-debugging-port\'');
     console.log('debugChrome');
     console.log(debugChrome);
     let cmd = '';
