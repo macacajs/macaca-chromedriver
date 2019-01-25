@@ -32,20 +32,10 @@ describe('test', function() {
 
   after(async function () {
     chromedriver.stop();
-    const smallChrome = await _.exec('ps -ef | grep \'chrome\'');
-    console.log('smallChrome');
-    console.log(smallChrome);
-    const portChrome = await _.exec('ps -ef | grep \'chrome\' | grep -e \'remote-debugging-port\'');
-    console.log('portChrome');
-    console.log(portChrome);
-    const smallChromeNoGrep = await _.exec('ps -ef | grep \'chrome\' | grep -v \'grep\'');
-    console.log('smallChromeNoGrep');
-    console.log(smallChromeNoGrep);
-    const debugChrome = await _.exec('ps -ef | grep \'chrome\' | grep -v \'grep\' | grep -e \'remote-debugging-port\'');
-    console.log('debugChrome');
-    console.log(debugChrome);
     let cmd = '';
-    if (_.platform.isOSX) {
+    if (process.env.CI) {
+      cmd = 'ps -ef | grep chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
+    } else if (_.platform.isOSX) {
       cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
     } else if (_.platform.isLinux) {
       cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs -r kill -15';
