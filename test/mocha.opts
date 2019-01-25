@@ -1,1 +1,2 @@
+--require co-mocha
 --reporter spec

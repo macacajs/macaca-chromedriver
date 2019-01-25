@@ -1,28 +1,46 @@
 'use strict';
 
 var assert = require('assert');
-var ChromeDriver = require('..');
 var detectPort = require('detect-port');
 
+var ChromeDriver = require('..');
+const _ = require('../lib/helper');
+
 describe('test', function() {
-  it('should be ok', function() {
-    assert.ok(ChromeDriver);
+  this.timeout(5 * 60 * 1000);
+  const proxyPort = detectPort(9515);
+  const chromedriver = new ChromeDriver({
+    proxyPort: proxyPort
   });
 
-  it('should start success', function *() {
-    var proxyPort = yield detectPort(9515);
-    var chromedriver = new ChromeDriver({
-      proxyPort: proxyPort
+  before(function * () {
+    chromedriver.start({
+      browserName: 'chrome'
     });
-
-    assert.ok(chromedriver);
-
-    try {
-      yield chromedriver.start({
-        browserName: 'chrome'
-      });
-    } catch (err) {
-      console.log(err);
-    }
+    // browser needs some time to start up
+    yield _.sleep(4000);
   });
+
+  it('should be ok', function () {
+    assert.ok(chromedriver);
+  });
+
+  it('get status', async function () {
+    const status = await chromedriver.getStatus();
+    assert.equal(status.status, 0);
+  });
+
+  after(async function () {
+    chromedriver.stop();
+    let cmd = '';
+    if (process.env.CI) {
+      cmd = 'ps -ef | grep chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
+    } else if (_.platform.isOSX) {
+      cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
+    } else if (_.platform.isLinux) {
+      cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs -r kill -15';
+    }
+    _.exec(cmd);
+  });
+
 });
