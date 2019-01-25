@@ -38,6 +38,12 @@ describe('test', function() {
     const psefResult = await _.exec('ps -ef');
     console.log('psefResult');
     console.log(psefResult);
+    const smallChrome = await _.exec('ps -ef | grep \'chrome\'');
+    console.log('smallChrome');
+    console.log(smallChrome);
+    const allChromeComma = await _.exec('ps -ef | grep \'Chrome\' | grep -v \'grep\'');
+    console.log('allChromeComma');
+    console.log(allChromeComma);
     const allChrome = await _.exec('ps -ef | grep Chrome | grep -v grep');
     console.log('allChrome');
     console.log(allChrome);
