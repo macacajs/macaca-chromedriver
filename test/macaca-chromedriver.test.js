@@ -30,8 +30,14 @@ describe('test', function() {
     assert.equal(status.status, 0);
   });
 
-  after(function () {
+  after(async function () {
     chromedriver.stop();
+    const allChrome = await _.exec('ps -ef | grep Chrome | grep -v grep');
+    console.log('allChrome');
+    console.log(allChrome);
+    const debugChrome = await _.exec('ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\'');
+    console.log('debugChrome');
+    console.log(debugChrome);
     let cmd = '';
     if (_.platform.isOSX) {
       cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
