@@ -1,7 +1,7 @@
 node_modules
 .travis.yml
-.jshintrc
-.jshintignore
+.eslintrc
+.eslintignore
 coverage/
 .nyc_output
 exec/
