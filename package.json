@@ -40,7 +40,7 @@
     "contributor": "git-contributor"
   },
   "config": {
-    "defaultVersion": "2.33"
+    "defaultVersion": "2.45"
   },
   "pre-commit": [
     "lint"
