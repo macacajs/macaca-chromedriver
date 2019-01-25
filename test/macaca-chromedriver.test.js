@@ -33,12 +33,10 @@ describe('test', function() {
   after(async function () {
     chromedriver.stop();
     let cmd = '';
-    if (process.env.CI) {
-      cmd = 'ps -ef | grep chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
-    } else if (_.platform.isOSX) {
-      cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
+    if (_.platform.isOSX) {
+      cmd = 'ps -ef | grep -i Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs kill -15';
     } else if (_.platform.isLinux) {
-      cmd = 'ps -ef | grep Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs -r kill -15';
+      cmd = 'ps -ef | grep -i Chrome | grep -v grep  | grep -e \'remote-debugging-port\' | awk \'{ print $2 }\' | xargs -r kill -15';
     }
     _.exec(cmd);
   });
