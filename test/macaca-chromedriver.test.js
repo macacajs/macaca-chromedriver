@@ -32,6 +32,12 @@ describe('test', function() {
 
   after(async function () {
     chromedriver.stop();
+    const psResult = await _.exec('ps');
+    console.log('psResult');
+    console.log(psResult);
+    const psefResult = await _.exec('ps -ef');
+    console.log('psefResult');
+    console.log(psefResult);
     const allChrome = await _.exec('ps -ef | grep Chrome | grep -v grep');
     console.log('allChrome');
     console.log(allChrome);
