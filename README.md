@@ -77,6 +77,7 @@ $ chromedriver
 ```bash
 $ CHROMEDRIVER_VERSION=2.2x npm i macaca-chromedriver -g
 ```
+versioning list: https://chromedriver.chromium.org/downloads
 
 ## License
 
