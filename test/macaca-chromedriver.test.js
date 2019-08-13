@@ -1,9 +1,9 @@
 'use strict';
 
-var assert = require('assert');
-var detectPort = require('detect-port');
+const assert = require('assert');
+const detectPort = require('detect-port');
 
-var ChromeDriver = require('..');
+const ChromeDriver = require('..');
 const _ = require('../lib/helper');
 
 describe('test', function() {
@@ -13,24 +13,24 @@ describe('test', function() {
     proxyPort: proxyPort
   });
 
-  before(function * () {
+  before(async () => {
     chromedriver.start({
       browserName: 'chrome'
     });
     // browser needs some time to start up
-    yield _.sleep(4000);
+    await _.sleep(4000);
   });
 
-  it('should be ok', function () {
+  it('should be ok', () => {
     assert.ok(chromedriver);
   });
 
-  it('get status', async function () {
+  it('get status', async () => {
     const status = await chromedriver.getStatus();
     assert.equal(status.status, 0);
   });
 
-  after(async function () {
+  after(async () => {
     chromedriver.stop();
     let cmd = '';
     if (_.platform.isOSX) {
