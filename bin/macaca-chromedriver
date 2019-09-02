@@ -4,7 +4,7 @@
 
 const program = require('commander');
 
-const install = require('../lib/install');
+const { install } = require('../lib/install');
 
 const pkg = require('../package.json');
 
