@@ -23,11 +23,11 @@
 
 ## Contributors
 
-|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars1.githubusercontent.com/u/1044425?v=4" width="100px;"/><br/><sub><b>ziczhu</b></sub>](https://github.com/ziczhu)<br/>|[<img src="https://avatars3.githubusercontent.com/u/1209810?v=4" width="100px;"/><br/><sub><b>paradite</b></sub>](https://github.com/paradite)<br/>|[<img src="https://avatars3.githubusercontent.com/u/29550321?v=4" width="100px;"/><br/><sub><b>Super-Ps</b></sub>](https://github.com/Super-Ps)<br/>|[<img src="https://avatars2.githubusercontent.com/u/5734727?v=4" width="100px;"/><br/><sub><b>Yinxl</b></sub>](https://github.com/Yinxl)<br/>|[<img src="https://avatars0.githubusercontent.com/u/6824951?v=4" width="100px;"/><br/><sub><b>kyowang</b></sub>](https://github.com/kyowang)<br/>|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-[<img src="https://avatars1.githubusercontent.com/u/17233599?v=4" width="100px;"/><br/><sub><b>Chan-Chun</b></sub>](https://github.com/Chan-Chun)<br/>|[<img src="https://avatars2.githubusercontent.com/u/12215513?v=4" width="100px;"/><br/><sub><b>zjhch123</b></sub>](https://github.com/zjhch123)<br/>
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars1.githubusercontent.com/u/1044425?v=4" width="100px;"/><br/><sub><b>ziczhu</b></sub>](https://github.com/ziczhu)<br/>|[<img src="https://avatars0.githubusercontent.com/u/6824951?v=4" width="100px;"/><br/><sub><b>kyowang</b></sub>](https://github.com/kyowang)<br/>|[<img src="https://avatars3.githubusercontent.com/u/1209810?v=4" width="100px;"/><br/><sub><b>paradite</b></sub>](https://github.com/paradite)<br/>|[<img src="https://avatars3.githubusercontent.com/u/29550321?v=4" width="100px;"/><br/><sub><b>Super-Ps</b></sub>](https://github.com/Super-Ps)<br/>|
+| :---: | :---: | :---: | :---: | :---: |
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Oct 08 2019 13:15:48 GMT+0800`.
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Wed Aug 05 2020 00:55:08 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
