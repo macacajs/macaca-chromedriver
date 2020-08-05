@@ -1,6 +1,10 @@
 dist: trusty
 sudo: required
 
+language: node_js	
+node_js:	
+  - 12
+
 addons:
   chrome: stable
   apt:
