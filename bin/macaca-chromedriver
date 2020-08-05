@@ -15,7 +15,9 @@ program
 program
   .command('install')
   .description('install chromedriver')
-  .action(install);
+  .action(function(env, options) {
+    install();
+  });
 
 program.parse(process.argv);
 

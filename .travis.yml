@@ -1,14 +1,14 @@
-language: node_js
-node_js:
-  - 8
-sudo: required
 dist: trusty
+sudo: required
+
+language: node_js	
+node_js:	
+  - 12
+
 addons:
+  chrome: stable
   apt:
-    sources:
-      - google-chrome
     packages:
-      - google-chrome-stable
       - xvfb
 before_install:
   - export DISPLAY=:99.0
