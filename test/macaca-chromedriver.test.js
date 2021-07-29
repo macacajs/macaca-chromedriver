@@ -40,5 +40,4 @@ describe('test', function() {
     }
     _.exec(cmd);
   });
-
 });

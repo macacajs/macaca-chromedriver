@@ -1,15 +1,19 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
     "chromedriver"
   ],
   "bin": {
-    "macaca-chromedriver": "./bin/macaca-chromedriver"
+    "macaca-chromedriver": "./bin/macaca-chromedriver.js"
   },
   "main": "./lib/macaca-chromedriver",
+  "files": [
+    "bin/**/*.js",
+    "lib/**/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/macacajs/macaca-chromedriver.git"
@@ -46,6 +50,5 @@
       "pre-commit": "npm run lint"
     }
   },
-  "homepage": "https://github.com/macacajs/macaca-chromedriver",
   "license": "MIT"
 }

@@ -1,11 +1,8 @@
 .DS_Store
 node_modules
-npm-debug.log
-.idea/*
-Thumbs.db
-coverage/
+coverage
 .nyc_output
 package-lock.json
-exec/
+exec
 *.sw*
 *.un~
