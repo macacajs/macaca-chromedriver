@@ -27,7 +27,7 @@ describe('test', function() {
 
   it('get status', async () => {
     const status = await chromedriver.getStatus();
-    assert.equal(status.status, 0);
+    assert(status.value && status.value.ready);
   });
 
   after(async () => {
