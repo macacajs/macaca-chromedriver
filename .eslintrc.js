@@ -1,4 +1,6 @@
-{
+'use strict';
+
+module.exports = {
   "env": {
     "browser": true,
     "node": true,
@@ -163,4 +165,4 @@
     "wrap-regex": 0,
     "yoda": [2, "never"]
   }
-}
+};
