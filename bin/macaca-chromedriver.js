@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict';
 
 const program = require('commander');
@@ -13,7 +15,7 @@ program
 program
   .command('install')
   .description('install chromedriver')
-  .action(function(env, options) {
+  .action(() => {
     install();
   });
 

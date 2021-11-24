@@ -1,6 +1,6 @@
 {
   "name": "macaca-chromedriver",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "Node.js wrapper for the selenium chromedriver.",
   "keywords": [
     "macaca",
@@ -36,14 +36,14 @@
     "nyc": "^11.7.1"
   },
   "scripts": {
-    "install": "node ./bin/macaca-chromedriver install",
+    "install": "node ./bin/macaca-chromedriver.js install",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint --ext js,jsx --fix lib test bin",
     "ci": "npm run lint && npm run test",
     "contributor": "git-contributor"
   },
   "config": {
-    "defaultVersion": "2.45"
+    "defaultVersion": "90"
   },
   "husky": {
     "hooks": {
