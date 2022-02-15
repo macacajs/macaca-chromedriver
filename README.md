@@ -25,9 +25,9 @@
 
 |[<img src="https://avatars.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars.githubusercontent.com/u/1044425?v=4" width="100px;"/><br/><sub><b>ziczhu</b></sub>](https://github.com/ziczhu)<br/>|[<img src="https://avatars.githubusercontent.com/u/1209810?v=4" width="100px;"/><br/><sub><b>paradite</b></sub>](https://github.com/paradite)<br/>|[<img src="https://avatars.githubusercontent.com/u/29550321?v=4" width="100px;"/><br/><sub><b>Super-Ps</b></sub>](https://github.com/Super-Ps)<br/>|[<img src="https://avatars.githubusercontent.com/u/5734727?v=4" width="100px;"/><br/><sub><b>Yinxl</b></sub>](https://github.com/Yinxl)<br/>|[<img src="https://avatars.githubusercontent.com/u/6824951?v=4" width="100px;"/><br/><sub><b>kyowang</b></sub>](https://github.com/kyowang)<br/>|
 | :---: | :---: | :---: | :---: | :---: | :---: |
-[<img src="https://avatars.githubusercontent.com/u/17233599?v=4" width="100px;"/><br/><sub><b>Chan-Chun</b></sub>](https://github.com/Chan-Chun)<br/>|[<img src="https://avatars.githubusercontent.com/u/12215513?v=4" width="100px;"/><br/><sub><b>zjhch123</b></sub>](https://github.com/zjhch123)<br/>|[<img src="https://avatars.githubusercontent.com/u/10104168?v=4" width="100px;"/><br/><sub><b>yihuineng</b></sub>](https://github.com/yihuineng)<br/>
+[<img src="https://avatars.githubusercontent.com/u/10104168?v=4" width="100px;"/><br/><sub><b>yihuineng</b></sub>](https://github.com/yihuineng)<br/>|[<img src="https://avatars.githubusercontent.com/u/17233599?v=4" width="100px;"/><br/><sub><b>Chan-Chun</b></sub>](https://github.com/Chan-Chun)<br/>|[<img src="https://avatars.githubusercontent.com/u/12215513?v=4" width="100px;"/><br/><sub><b>zjhch123</b></sub>](https://github.com/zjhch123)<br/>
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Thu Oct 14 2021 18:34:00 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Feb 15 2022 18:09:23 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
